@@ -1,1 +1,97 @@
+<header>
+	<h1 style="color: #D8BFD8;"> Durmegle</h1>
+</header>>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<style>
+        
+        @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 
+:root {
+	/* Base font size */
+	font-size: 10px;
+
+	/* Heading height variable*/
+	--heading-height: 30em;
+}
+
+body {
+	font-family: "Roboto", Arial, sans-serif;
+	min-height: 100vh;
+	background-color: #D8BFD8;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	height: var(--heading-height);
+}
+
+/* Create angled background with 'before' pseudo-element */
+header::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 6em;
+	width: 100%;
+	height: calc(var(--heading-height) + 10em);
+	z-index: -1;
+	transform: skewY(-3.5deg);
+	background: 
+		linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+		url(https://3.bp.blogspot.com/_Qd88UM3_JYs/TNZ1y3L7xnI/AAAAAAAAAwU/NBb7O8w860U/s1600/holding-hands-on-beach-1024x656.jpg) no-repeat center,
+		linear-gradient(#4e4376, #2b5876);
+	background-size: cover;
+	border-bottom: .2em solid #fff;
+}
+
+h1 {
+	font-size: calc(2.8em + 2.6vw);
+	font-weight: 700;
+	letter-spacing: .01em;
+	padding: 10rem 0 0 4.5rem;
+	text-shadow: .022em .022em .022em #111;
+	color: #fff;
+}
+
+main {
+	padding: calc(var(--heading-height) + 1.5vw) 4em 0;
+}
+
+p {
+	font-size: calc(2em + .25vw);
+	font-weight: 400;
+	line-height: 2;
+	margin-bottom: 1.5em;
+	color: #8B008B;
+    text-align: center
+}
+.button {
+  background-color: #D8BFD8;
+  border: 2px solid #8B008B;
+  color: #8B008B;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+	</style>
+		<title>Durmegle</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<main style='text-align: center'>
+    <p>How are you doing?</p>
+    <p>Lockdown has been difficult.</p>
+    <p>Feeling lonely?</p>
+	<p>Find your ideal friend today!</p>
+    <a href="signup.html" style='text-align: center'>
+        <button type="button" class="button">Find me a friend</button>
+    </a>
+</main>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    
