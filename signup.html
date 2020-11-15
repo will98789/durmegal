@@ -1,57 +1,200 @@
 <html>
 <head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@505&display=swap" rel="stylesheet">
+<style>
+    body {
+background-color: #D8BFD8;
+}
+.empty-r{
+    width:33%;
+    float: right;
+}
+.empty-l{
+    width:33%;
+    float: left;
+}
+.form {
+  border: 2px solid white;
+  background-color:  #D8BFD8;
+  text-align: center;
+  margin: auto;
+  width: 30%;
+}
+::placeholder {
+	color: #808080;
+  background-color: white;
+  font-style: italic;
+}
+.interests{
+    background-color: #8B008B;
+    color: white
+}
+.button {
+  background-color: #D8BFD8;
+  border: 2px solid #8B008B;
+  color: #8B008B;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #c9a0dc;
+}
+</style>
+<title>Durmegle</title>
+<link rel="shortcut icon" href="icon.png" type="image/png">
 </head>
-<body>
-<form action="action.php" method="post">
-    <label for="name"><b>Name</b></label>
-    <input type="text" placeholder="Enter Name" name="name" required>
-    <br>
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-    <br>
-    <label for="interests"><b>Interests</b></label>
-    <br>
-    <label for="sports"><b>Sports</b></label>
-    <p>Move slider along depending on how much you love it</p>
-    <label for="football">Football:</label>
-    <input type="range" id="football" name="football" min="0" max="5">
-    <br>
-    <label for="badminton">Badminton:</label>
-    <input type="range" id="badminton" name="badminton" min="0" max="5">
-    <br>
-    <label for="rowing">Rowing:</label>
-    <input type="range" id="rowing" name="rowing" min="0" max="5">
-    <br>
-    <label for="netball">Netball:</label>
-    <input type="range" id="netball" name="netball" min="0" max="5">
-    <br>
+<body style='text-align: center;font-family: "Playfair Display", serif;font-size:20px'>
+<br>
+<div class="empty-r">
+    <img style='height: 100%; width: 75%; object-fit: contain' src="peoplet.jpeg">
+</div>
+<div class="empty-l">
+    <img style='height: 100%; width: 75%; object-fit: contain' src="peoplet.jpeg">
+</div>
+<div class="form">
+<p style='font-size:35px; font-style:bold'>Find a friend </p>
+<form action="action.php" method="post" autocomplete="off">
+<label for="name"><b>Name</b></label>
+<input type="text" placeholder="Enter Name here" name="name" required autocomplete="off" readonly onfocus="this.removeAttribute('readonly');">
+<br>
+<label for="email"><b>Email</b></label>
+<input type="text" placeholder="Enter Email here" name="email" required autocomplete="off" readonly onfocus="this.removeAttribute('readonly');">
+<br>
+<div class="interests">
+<label for="interests"><b>INTERESTS</b></label>
+</div>
+<div class="interests">
+<label for="sports" ><b>1. SPORTS</b></label>
+</div>
+<p style="line-height: 0.2">Move slider along depending on how much you love it </p>
+<label for="football">Football:</label>
+<input type="range" id="football" name="football" min="0" max="5" list="tickmarks">
+<datalist id="tickmarks">
+    <option value="0"></option>
+    <option value="1"></option>
+    <option value="2"></option>
+    <option value="3"></option>
+    <option value="4"></option>
+    <option value="5"></option>
+</datalist>
+<br>
+<label for="badminton">Badminton:</label>
+<input type="range" id="badminton" name="badminton" min="0" max="5"list="tickmarks">
+<datalist id="tickmarks">
+    <option value="0"></option>
+    <option value="1"></option>
+    <option value="2"></option>
+    <option value="3"></option>
+    <option value="4"></option>
+    <option value="5"></option>
+</datalist>
+<br>
+<label for="rowing">Rowing:</label>
+<input type="range" id="rowing" name="rowing" min="0" max="5"list="tickmarks">
+<datalist id="tickmarks">
+    <option value="0"></option>
+    <option value="1"></option>
+    <option value="2"></option>
+    <option value="3"></option>
+    <option value="4"></option>
+    <option value="5"></option>
+</datalist>
+<br>
+<label for="netball">Netball:</label>
+<input type="range" id="netball" name="netball" min="0" max="5"list="tickmarks">
+<datalist id="tickmarks">
+    <option value="0"></option>
+    <option value="1"></option>
+    <option value="2"></option>
+    <option value="3"></option>
+    <option value="4"></option>
+    <option value="5"></option>
+</datalist>
+<br>
+<div class="interests">
+<label for="moviegenres"><b>2. MOVIE GENRES</b></label>
+</div>
+<p style="line-height: 0.2">Move slider along depending on how much you love it </p>
+<label for="comedy">Comedy:</label>
+<input type="range" id="comedy" name="comedy" min="0" max="5"list="tickmarks">
+<datalist id="tickmarks">
+    <option value="0"></option>
+    <option value="1"></option>
+    <option value="2"></option>
+    <option value="3"></option>
+    <option value="4"></option>
+    <option value="5"></option>
+</datalist>
+<br>
+<label for="romcom">Rom Com:</label>
+<input type="range" id="romcom" name="romcom" min="0" max="5"list="tickmarks">
+<datalist id="tickmarks">
+    <option value="0"></option>
+    <option value="1"></option>
+    <option value="2"></option>
+    <option value="3"></option>
+    <option value="4"></option>
+    <option value="5"></option>
+</datalist>
+<br>
+<label for="thriller">Thriller:</label>
+<input type="range" id="thriller" name="thriller" min="0" max="5"list="tickmarks">
+<datalist id="tickmarks">
+    <option value="0"></option>
+    <option value="1"></option>
+    <option value="2"></option>
+    <option value="3"></option>
+    <option value="4"></option>
+    <option value="5"></option>
+</datalist>
+<br>
+<div class="interests">
+<label for="creativeint"><b>3. CREATIVITY</b></label>
+</div>
+<p style="line-height: 0.2">Move slider along depending on how much you love it </p>
+<label for="reading">Reading:</label>
+<input type="range" id="reading" name="reading" min="0" max="5"list="tickmarks">
+<datalist id="tickmarks">
+    <option value="0"></option>
+    <option value="1"></option>
+    <option value="2"></option>
+    <option value="3"></option>
+    <option value="4"></option>
+    <option value="5"></option>
+</datalist>
+<br>
+<label for="painting">Painting:</label>
+<input type="range" id="painting" name="painting" min="0" max="5"list="tickmarks">
+<datalist id="tickmarks">
+    <option value="0"></option>
+    <option value="1"></option>
+    <option value="2"></option>
+    <option value="3"></option>
+    <option value="4"></option>
+    <option value="5"></option>
+</datalist>
+<br>
+<label for="writing">Writing:</label>
+<input type="range" id="writing" name="writing" min="0" max="5"list="tickmarks">
+<datalist id="tickmarks">
+    <option value="0"></option>
+    <option value="1"></option>
+    <option value="2"></option>
+    <option value="3"></option>
+    <option value="4"></option>
+    <option value="5"></option>
+</datalist>
+<br>
 
-    <label for="moviegenres"><b>Movie Genres</b></label>
-    <p>Move slider along depending on how much you love it</p>
-    <label for="comedy">Comedy:</label>
-    <input type="range" id="comedy" name="comedy" min="0" max="5">
-    <br>
-    <label for="romcom">Rom Com:</label>
-    <input type="range" id="romcom" name="romcom" min="0" max="5">
-    <br>
-    <label for="thriller">Thriller:</label>
-    <input type="range" id="thriller" name="thriller" min="0" max="5">
-    <br>
 
-    <label for="creativeint"><b>Creative Interests</b></label>
-    <p>Move slider along depending on how much you love it</p>
-    <label for="reading">Reading:</label>
-    <input type="range" id="reading" name="reading" min="0" max="5">
-    <br>
-    <label for="painting">Painting:</label>
-    <input type="range" id="painting" name="painting" min="0" max="5">
-    <br>
-    <label for="writing">Writing:</label>
-    <input type="range" id="writing" name="writing" min="0" max="5">
-    <br>
-
-
-    <button type="submit" >Submit</button>
+<button type="submit" class="button">Find a friend for me!</button>
+</div>
 </form>
 </body>
 </html>
