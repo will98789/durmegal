@@ -17,3 +17,20 @@ body{
 .header{
     color: #68246D;
 }
+
+#messagesBox{
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  height: 50vh;
+  overflow-y: auto;
+  margin-bottom: 10%;
+  text-align: left !important;
+  border-radius: 10px;
+}
+
+#messagesBox ul{
+  list-style-type: none;
+  padding-left: 4%;
+  padding-top: 4%;
+}
