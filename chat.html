@@ -9,12 +9,12 @@
         <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     </head>
     <body class="text-center">
-        <div class="container">
+        <div class="container-fluid">
             <div class="content">
-                <p id="text"></p>
-                <ul id="messages">
-                    
-                </ul>
+                <ul id="messages"></ul>
+                    <form action="/" method="POST" id="chatForm">
+                        <input id="txt" autocomplete="off" autofocus="on" placeholder="type your message here..." /><button>Send</button>
+                    </form>
             </div>
         </div>
     </body>
